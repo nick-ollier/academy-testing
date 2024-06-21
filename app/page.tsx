@@ -1,17 +1,17 @@
 import { auth } from "@/auth";
 import Link from "next/link";
 
-export const getUser = async () => {
-    const session = await auth();
+// export const getUser = async () => {
+//     const session = await auth();
 
-    return session?.user?.name;
-};
+//     return session?.user?.name;
+// };
 
-export const User = async () => {
-    const session = await auth();
+// export const User = async () => {
+//     const session = await auth();
 
-    return <p>{session?.user && session.user.name}</p>;
-};
+//     return <p>{session?.user && session.user.name}</p>;
+// };
 
 export default function Home() {
     return (
